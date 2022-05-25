@@ -6,11 +6,15 @@ import { useState } from 'react'
 export default function AboutMe() {
   const [hidden, setHidden] = useState(true);
   const [hide, setHide] = useState(true)
+ 
   return (
     <div className='aboutMeContainer boxingPic'>
       <div className='aboutMe-column1'>
         <header className='header'>AboutMe</header>
+        <div className='boxingImage-div'>
         <img src={meBoxing} className='landing-images' />
+        </div>
+        
         <h2 className='skills-title'>Skills</h2>
         <div className='aboutMe-ol-container'>
             <span className='skills-button'>Javascript</span>
