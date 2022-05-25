@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import {Routes, Route} from 'react-router-dom'
 import Nav from './components/Nav'
 import LandingPage from './pages/LandingPage'
@@ -10,6 +10,7 @@ import Resume from './components/Resume'
 function App() {
   return (
     <div>
+      < Nav />
       <div className='app-container'>
         <Routes>
           <Route path='/' element={<LandingPage />} />
@@ -18,7 +19,7 @@ function App() {
           <Route path='/resume' element={<Resume />} />
         </Routes>
       </div>
-      < Nav />
+      
     </div>
   )
 }

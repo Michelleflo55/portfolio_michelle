@@ -1,16 +1,34 @@
 import React from 'react' 
-import image from './wawPFP.png'
+
+import { Link } from 'react-router-dom'
+import creature from '../images/Creature.png'
+import shonen from '../images/Shonen.png'
+import ocm from '../images/OC.png'
 
 
  function LandingPage() {
 
   return (
-    <div>
-      <img src={image} className='pfp' />
-    </div>
+
+      <div className='landingContainer'>
+        <div className='links-flex'>
+          <Link to='projects'> 
+            <img className='landing-images' src={creature}/>
+          </Link> 
+          <Link to='aboutMe'> 
+            <img className='landing-images' src={shonen} /> 
+          </Link>          
+          <Link to='resume'> 
+            <img className='landing-images' src={ocm} /> 
+          </Link>     
+        </div>
+      </div>
+   
   )
 }
 
 export default LandingPage
+
+
 
 

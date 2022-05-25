@@ -1,38 +1,141 @@
-.App {
+/* App Page*/ 
+.app-container{
+  display:flex;
+  justify-content: center;
+ 
+}
+/* Nav */
+.navContainer{
+  display: flex;
+  justify-content: center;
+  background-color: #c2ddff7d;
+}
+.pfp{
+  max-height: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+/* landing page */
+
+.landingContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  gap:10%;
+}
+.links-flex{
+  display:flex;
+  flex-direction: row;
+}
+.landing-images{
+  border-radius: 30px;
+  margin:5px;
+  max-height: 60%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.landing-images:hover{
+  box-shadow: 0 0 10px 0 #487cff inset, 0 0 20px 2px #ffffff;
+  border: 3px solid #71b1ff;
+  transform: scale(1);
+}
+
+/* About me */
+.aboutMeContainer{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  padding-top: 2%;
+  gap: 8px;
+  max-height: fit-content;
+}
+.header, .header2, .header3-myStyle, .skills-title {
+font-size:26px;
+font-weight: 550;
+text-align: start;
+margin-left: auto;
+margin-right: auto;
+border: solid rgba(159, 159, 159, 0.693) 1px;
+border-radius: 5px;
+background-color: #ffffff;
+}
+.aboutMe-column1{
+  min-width:30vw;
+  max-width: 40vw;
+  gap:5px;
+  background-color: #ddebfc7d;
+  border-radius: 5px;
+  border: 1px solid rgba(159, 159, 159, 0.693);
+  max-height: fit-content;
+}
+.boxingPic{
+  max-width:90vw;
+}
+
+.aboutMe-column2{
+min-width: 30vw;
+max-width: 30vw;
+background-color: #ddebfc7d;
+border-radius: 5px;
+border: 1px solid rgba(159, 159, 159, 0.693);
+height: fit-content;
+
+}
+
+.aboutMe-ol-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.skills-button{
+  background-color: #adcffa7d;
+  border-radius: 5px;
+  border: solid rgb(78, 178, 255) 1px;
+  width:20%;
+  height:30%;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.description-paragraph{
+  border-radius: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  text-align:start;
+  font-weight: 500;
+}
+.dropdown-image{
+  max-width:30px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Projects*/
+.projects-container{
+  display:flex; 
+  /* flex-direction: row; */
+  justify-content:space-between
+}
+.projects-leftColumn, .projects-middleColumn, .projects-rightColumn{
+  max-width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Resume */
+.resume-container{
+  background-color: rgba(241, 241, 241, 0.389);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resume-image{
+  height:100%
 }
